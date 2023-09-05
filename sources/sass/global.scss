@@ -19,5 +19,30 @@ header {
   }
 }
 
+/// ***Footer***//
+footer {
+  background-color: $color_black;
+  padding: 22px;
+
+  .footer__title {
+    font-family: $font-title;
+    color: $color_white2;
+    font-size: $font-size-l;
+    text-decoration: none;
+  }
+
+  ul {
+    list-style: none;
+    color: $color_white2;
+    font-family: $font-text;
+    font-size: $font-size-m;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding: 0;
+    margin: 15px 0 0;
+  }
+}
+
 
 
