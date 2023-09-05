@@ -17,6 +17,7 @@
     width: 100%;
     justify-content: center;
     color: $color_black;
+    margin-bottom: 25px;
 
     input {
       background: transparent;
@@ -29,17 +30,101 @@
   }
 }
 
+//****Contenu de page***//
 
-.h1 {
-  font-size: 24px;
+//******Section recherche***//
+
+h1 {
+  font-size: $font-size-xl;
   line-height: 18.75px;
+  font-family: $font-text ;
+  text-align: center;
 }
 
-//****Contenu de page***//
+.sous-texte { 
+  font-size: $font-size-l;
+  font-family: $font-text;
+  text-align: center;
+}
+
+.explorer { background: linear-gradient($secondcolor, $maincolor );
+  width: 218px;
+  height: 51px;
+  color: $color_white2;
+  border-width: 0px; 
+  border-radius: 25px;
+  font-size: $font-size-m;
+  font-family: $font-size-m;
+  margin-top: 25px;
+  margin-bottom: 60px ;
+}
+
+.recherche {background-color: $color_white;
+}
+
+
+//fonctionnement**//
+
+h2 {
+  margin-top: 30px;
+  font-size: $font-size-xl;
+  font-family: $font-text;
+}
+
+.fonctionnement { 
+  padding: 30px 17px;
+  .filtres {display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+
+    .filtres__liste { width: 95%;
+      height: 73px;
+      display: flex;
+      align-items: center;
+      font-size: $font-size-m;
+      font-family: $font-text;
+      justify-content: space-around;
+      padding-right: 75px;
+      font-weight: bold;
+      box-shadow: 0px 4px 15px 0px #00000026;
+      border-radius: 20px;
+      border-width: 0px;
+      
+  }
+  }
+  }
+  
+  .number { 
+    position: absolute;
+    left: 15px;
+    display: flex;
+    border-radius: 50%;
+    color: $color_white2;
+    background-color: $maincolor;
+    padding: 7px;
+    font-family: $font-text;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    }
+  
+  .filtres i {
+    color: #7E7E7E;
+  }
+
+  #purple { color: $maincolor;}
+
+
+//****restaurants***//
 
 .restaurants {
   padding: 30px 17px;
   background: $color_white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   .card {
     border-radius: 15px;
@@ -47,10 +132,16 @@
     flex-direction: column;
     overflow: hidden;
     margin-bottom: 20px;
+    width: 98%;
+    height: 251px;
+    margin: 10px auto;
+
+//*** Image 2 beug tjrs(hauteur différentes des autres si on ne met pas les valeurs de height en px//**
+ //**le soucis c'est que ça ne permet pas selon la taille de télephone de garder les mêmes proportions parfois la card est mal centrée///***
 
     img {
       width: 100%;
-      height: 25%;
+      height: 70%;
       object-fit: cover;
     }
 
@@ -58,17 +149,99 @@
       background: $color_white2;
       padding: 15px;
       position: relative;
+      margin-bottom: 10px ;
 
       h4, p {
         margin: 0;
+        font-family: $font-text;
+      }
+
+      h4 {
+        font-size: $font-size-l;
+      }
+
+      p {
+        font-size: 17px;
+  
       }
 
       i {
         position: absolute;
         right: 15px;
-        top: 40%;
+        top: 20%;
+        display: flex;
+        font-size: 25px;
       }
+
+      i:hover { color: $maincolor;}  
     }
 
   }
+}
+//**** animations sur ce coeur, j'ai mis cette couleur en attendant***:////
+//*** pour les I si je pred le solid je peux fair ele gradient linear au clique, mais je dois le mettre en blanc pour ça avant, et dans ce cas il est invisible,
+//et si j'ajoute une bordurer j'ai un carré et non un coeur dessiné sans remplissage
+
+
+
+ /// ***footer***//
+
+ 
+  footer {
+    margin-top: 40px;
+    background-color: $color_black;
+    height: 300px;
+    
+
+
+    .logo_footer {
+    width: 33%;
+    display: flex;
+    margin-left: 40px;
+
+   }
+    ul {
+      list-style: none;
+      color: $color_white2; 
+      font-family: $font-text;
+      font-size: $font-size-m;
+      display: flex;
+      flex-direction: column;
+      gap : 7px;}
+   }
+
+//*** Je ne vois pas les règles sass liées au logo header ds le sass pourtant elles sotn ds le css et s'appliquent bien**//
+
+//** bakcground footer avec with 300px j'ai réussi à le faire descendre jusqu'en bas mais il ne prend pas toute la section, est ce du au logo qui entre en contradiction ?
+
+.etiquette_new {
+  position: absolute;
+  display: flex;
+  right: 30px;
+  top: 108%;
+  color: #008766;
+  border: 1px solid greenyellow ;
+  background-color: #99E2D0;
+  font-size: 14px;
+  width: 80px;
+  height: 29px;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.etiquette_new2 {
+  position: absolute;
+  display: flex;
+  right: 30px;
+  top: 140%;
+  color: #008766;
+  border: 1px solid greenyellow ;
+  background-color: #99E2D0;
+  font-size: 14px;
+  width: 80px;
+  height: 29px;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
 }
