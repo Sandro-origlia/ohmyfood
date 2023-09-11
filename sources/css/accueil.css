@@ -38,6 +38,29 @@ footer ul {
   margin: 15px 0 0;
 }
 
+@media screen and (min-width: 1024px) {
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 40px;
+  }
+  footer .footer__title {
+    display: flex;
+    font-size: 17px;
+    margin-left: 100px;
+    padding-top: 10px;
+  }
+  footer ul {
+    display: inline;
+  }
+  footer li {
+    display: inline;
+    margin: 5px;
+  }
+  footer .break {
+    margin-left: 35px;
+  }
+}
 .recherche {
   display: flex;
   flex-direction: column;
@@ -221,6 +244,40 @@ h2 {
   align-items: center;
   justify-content: center;
   font-weight: bold;
+}
+
+@media screen and (min-width: 1024px) {
+  header .logo_header {
+    width: 14%;
+  }
+  .explorer {
+    margin-bottom: 20px;
+  }
+  .fonctionnement {
+    padding: 20px 17px 50px;
+  }
+  .fonctionnement .filtres {
+    flex-direction: row;
+    display: flex;
+    gap: 25px;
+  }
+  .fonctionnement .filtres__liste {
+    width: 335px;
+    display: flex;
+  }
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    row-gap: 25px;
+    column-gap: 10px;
+  }
+  .cards .card {
+    width: 33%;
+  }
+  .restaurants h2 {
+    padding-left: 8%;
+  }
 }
 
 /*# sourceMappingURL=accueil.css.map */

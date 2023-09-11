@@ -1,18 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
+.main_conteneur {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
 header {
+  display: flex;
+  padding: 10px 0;
+}
+header .logo_header {
+  width: 50%;
+  display: flex;
+  margin: auto;
+}
+
+footer {
+  background-color: #353535;
+  padding: 22px;
+}
+footer .footer__title {
+  font-family: "Shrikhand", cursive;
+  color: #ffffff;
+  font-size: 18px;
+  text-decoration: none;
+}
+footer ul {
+  list-style: none;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding: 0;
+  margin: 15px 0 0;
+}
+
+@media screen and (min-width: 1024px) {
+  footer {
     display: flex;
-    padding: 10px 0;
+    flex-direction: row-reverse;
+    padding-top: 40px;
   }
-  header .logo_header {
-    width: 50%;
+  footer .footer__title {
     display: flex;
+    font-size: 17px;
+    margin-left: 100px;
+    padding-top: 10px;
+  }
+  footer ul {
+    display: inline;
+  }
+  footer li {
+    display: inline;
+    margin: 5px;
+  }
+  footer .break {
+    margin-left: 35px;
+  }
+}
+.imagedefond {
+  display: flex;
+  object-fit: cover;
+  width: 100%;
+  height: 275px;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  border-radius: 8% 8% 0 0;
+  background-color: #F6F6F6;
+  overflow: hidden;
+}
+.card h1 {
+  display: flex;
+  justify-content: start;
+  font-size: 40px;
+  line-height: 41px;
+  font-family: "Shrikhand", cursive;
+  padding-left: 30px;
+}
+.card input[type=checkbox] {
+  display: none;
+}
+.card input:checked + label i.fa-regular {
+  display: none;
+}
+.card input:checked + label i.fa-solid {
+  display: block;
+}
+.card i {
+  position: absolute;
+  right: 15px;
+  top: 4%;
+  display: flex;
+  font-size: 25px;
+}
+.card i.fa-solid {
+  color: #9356DC;
+  display: none;
+}
+.card h2 {
+  font-size: 16px;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  line-height: 19px;
+  display: inline-block;
+  padding-bottom: 5px;
+  position: relative;
+  bottom: 75%;
+  padding-left: 20px;
+}
+.card h2:after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 1px;
+  bottom: 0;
+  border-bottom: 3px solid #99E2D0;
+  display: flex;
+}
+.card ul {
+  list-style-type: none;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.card li {
+  box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1019607843);
+  width: 90%;
+  height: 72px;
+  display: flex;
+  justify-content: center;
+  border-radius: 15px;
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  color: #000000;
+  font-weight: bold;
+  padding-left: 20px;
+  margin-top: 5px;
+}
+.card li .description {
+  font-size: 15px;
+  font-weight: normal;
+}
+.card li .prix {
+  position: relative;
+  bottom: 33%;
+  left: 90%;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.commander {
+  justify-content: center;
+  display: flex;
+}
+.commander .bouton {
+  background: linear-gradient(#FF79DA, #9356DC);
+  width: 218px;
+  height: 51px;
+  color: #ffffff;
+  border-width: 0px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  margin-top: 25px;
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1024px) {
+  header .logo_header {
+    width: 14%;
+  }
+  .card {
+    display: flex;
+    width: 70%;
     margin: auto;
   }
-
-
-
-
-
-
-
+  .card h1 {
+    margin: auto;
+    padding-top: 50px;
+    font-size: 28px;
+  }
+  .card i {
+    display: flex;
+    position: absolute;
+    right: 33%;
+    top: 5.5%;
+  }
+  .card li {
+    display: flex;
+    width: 45%;
+    margin: auto;
+  }
+  .card h2 {
+    padding-left: 30%;
+  }
+  .commander {
+    background-color: #F6F6F6;
+    width: 70%;
+    margin: auto;
+    display: flex;
+  }
+}
 
 /*# sourceMappingURL=menu.css.map */

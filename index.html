@@ -38,6 +38,7 @@
 
 <section class="restaurants">
     <h2>Restaurants</h2>
+    <div class="cards">
     <div class="card">
         <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="image_restaurant">
         <div class="new_tag">Nouveau</div>
@@ -57,15 +58,24 @@
         <div class="legende">
             <h4>La note enchantée</h4>
             <p>Charonne</p>
-            <i class="fa-regular fa-heart"></i>
+            <input type="checkbox" id="heard_card_2">
+            <label for="heard_card_2">
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-regular fa-heart"></i>
+            </label>
         </div>
     </div>
+
     <div class="card">
         <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="image_restaurant">
         <div class="legende">
             <h4>À la française</h4>
             <p>Cité rouge</p>
-            <i class="fa-regular fa-heart"></i>
+            <input type="checkbox" id="heard_card_3">
+            <label for="heard_card_3">
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-regular fa-heart"></i>
+            </label>
         </div>
     </div>
     <div class="card">
@@ -73,10 +83,14 @@
         <div class="legende">
             <h4>Le délice des sens</h4>
             <p>Folie-Méricourt</p>
-            <i class="fa-regular fa-heart"></i>
+            <input type="checkbox" id="heard_card_4">
+            <label for="heard_card_4">
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-regular fa-heart"></i>
+            </label>
     </div>
 </div>
-
+</div>
 </section>
 <footer>
     <a href="#" class="footer__title">
@@ -85,7 +99,7 @@
     <ul>
         <li><i class="fa-solid fa-utensils"></i> Proposer un restaurant</li>
         <li><i class="fa-solid fa-handshake-angle"></i> Devenir partenaire</li>
-        <li>Mentions légales</li>
+        <li class="break">Mentions légales</li>
         <li>Contact</li>
     </ul>
 </footer>
