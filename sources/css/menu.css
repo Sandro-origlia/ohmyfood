@@ -23,7 +23,6 @@ footer {
 footer .footer__title {
   font-family: "Shrikhand", cursive;
   color: #ffffff;
-  font-size: 18px;
   text-decoration: none;
 }
 footer ul {
@@ -61,11 +60,34 @@ footer ul {
     margin-left: 35px;
   }
 }
+header {
+  margin-bottom: -3%;
+}
+
+.return {
+  font-size: 30px;
+  position: relative;
+  left: 3%;
+  top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.return a {
+  color: black;
+}
+
 .imagedefond {
   display: flex;
   object-fit: cover;
   width: 100%;
   height: 275px;
+  top: 50px;
+  position: relative;
+}
+
+.header {
+  margin-bottom: -6%;
 }
 
 .card {
@@ -73,7 +95,7 @@ footer ul {
   width: 100%;
   flex-direction: column;
   display: flex;
-  border-radius: 8% 8% 0 0;
+  border-radius: 5% 5% 0 0;
   background-color: #F6F6F6;
   overflow: hidden;
 }
@@ -96,8 +118,8 @@ footer ul {
 }
 .card i {
   position: absolute;
-  right: 15px;
-  top: 4%;
+  right: 40px;
+  top: 3.5%;
   display: flex;
   font-size: 25px;
 }
@@ -130,38 +152,45 @@ footer ul {
   gap: 20px;
   display: flex;
   flex-direction: column;
+  padding: 0 10px;
 }
 .card li {
   box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1019607843);
   width: 90%;
-  height: 72px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   border-radius: 15px;
   gap: 5px;
-  display: flex;
-  flex-direction: column;
+  flex-direction: row;
   font-size: 18px;
-  color: #000000;
-  font-weight: bold;
-  padding-left: 20px;
   margin-top: 5px;
+  padding: 15px;
+  align-items: center;
+  background: white;
 }
 .card li .description {
   font-size: 15px;
   font-weight: normal;
 }
+.card li .description p {
+  margin: 0;
+}
+.card li .description p.intitule {
+  font-size: 18px;
+  color: #000000;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
 .card li .prix {
-  position: relative;
-  bottom: 33%;
-  left: 90%;
   font-size: 18px;
   font-weight: bold;
+  align-self: end;
 }
 
 .commander {
   justify-content: center;
   display: flex;
+  background-color: #F6F6F6;
 }
 .commander .bouton {
   background: linear-gradient(#FF79DA, #9356DC);
@@ -174,6 +203,7 @@ footer ul {
   font-family: "Roboto", sans-serif;
   margin-top: 25px;
   margin-bottom: 60px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
 }
 
 @media screen and (min-width: 1024px) {
@@ -182,7 +212,7 @@ footer ul {
   }
   .card {
     display: flex;
-    width: 70%;
+    width: 75%;
     margin: auto;
   }
   .card h1 {
@@ -193,20 +223,20 @@ footer ul {
   .card i {
     display: flex;
     position: absolute;
-    right: 33%;
-    top: 5.5%;
+    right: 27%;
+    top: 5.3%;
   }
   .card li {
     display: flex;
-    width: 45%;
+    width: 70%;
     margin: auto;
   }
   .card h2 {
-    padding-left: 30%;
+    padding-left: 14.5%;
   }
   .commander {
     background-color: #F6F6F6;
-    width: 70%;
+    width: 75%;
     margin: auto;
     display: flex;
   }
