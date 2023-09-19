@@ -23,7 +23,6 @@ footer {
 footer .footer__title {
   font-family: "Shrikhand", cursive;
   color: #ffffff;
-  font-size: 18px;
   text-decoration: none;
 }
 footer ul {
@@ -113,6 +112,10 @@ h1 {
   margin-top: 25px;
   margin-bottom: 60px;
 }
+.explorer a {
+  text-decoration: none;
+  color: #ffffff;
+}
 
 h2 {
   margin-top: 30px;
@@ -167,6 +170,12 @@ h2 {
   color: #9356DC;
 }
 
+.cards a {
+  height: 251px;
+  text-decoration: none;
+  color: black;
+}
+
 .restaurants {
   padding: 30px 17px;
   background: #F6F6F6;
@@ -178,7 +187,6 @@ h2 {
   border-radius: 15px;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
   width: 98%;
   height: 251px;
   margin: 10px auto;
@@ -194,13 +202,8 @@ h2 {
   padding: 15px;
   position: relative;
   margin-bottom: 10px;
-  /*
-        i:hover {
-          color: $maincolor;
-        }*/
 }
-.restaurants .card .legende h4,
-.restaurants .card .legende p {
+.restaurants .card .legende h4, .restaurants .card .legende p {
   margin: 0;
   font-family: "Roboto", sans-serif;
 }
@@ -230,7 +233,10 @@ h2 {
   color: #9356DC;
   display: none;
 }
-.restaurants .card .new_tag {
+.restaurants .card .legende i:hover {
+  color: #9356DC;
+}
+.restaurants .new_tag {
   position: absolute;
   display: flex;
   right: 15px;
@@ -273,7 +279,7 @@ h2 {
     column-gap: 10px;
   }
   .cards .card {
-    width: 33%;
+    width: 40%;
   }
   .restaurants h2 {
     padding-left: 8%;

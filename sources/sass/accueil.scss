@@ -1,290 +1,278 @@
-
 @import "global";
-//****Header***/
-/.recherche
-{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	background-color: $color_white;
-	.localisation
-	{
-		background-color: $color_medium_white;
-		padding: 15px 0;
-		font-size: 16px;
-		align-items: center;
-		display: flex;
-		box-sizing: content-box;
-		width: 100%;
-		justify-content: center;
-		color: $color_black;
-		margin-bottom: 25px;
-		input
-		{
-			background: transparent;
-			border: none;
-			width: auto;
-			margin-right: 20px;
-			text-align: center;
-			font-size: $font-size-m;
-		}
+//****Header***//
+.recherche {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $color_white;
 
-	}
+  .localisation {
+    background-color: $color_medium_white;
+    padding: 15px 0;
+    font-size: 16px;
+    align-items: center;
+    display: flex;
+    box-sizing: content-box;
+    width: 100%;
+    justify-content: center;
+    color: $color_black;
+    margin-bottom: 25px;
+
+    input {
+      background: transparent;
+      border: none;
+      width: auto;
+      margin-right: 20px;
+      text-align: center;
+      font-size: $font-size-m;
+    }
+
+  }
 }
+
+
 
 //****Contenu de page***/
-///******Section recherche***/
-/h1
-{
-	font-size: $font-size-xl;
-	line-height: 18.75px;
-	font-family: $font-text ;
-	text-align: center;
+///******Section recherche***//
+
+h1 {
+  font-size: $font-size-xl;
+  line-height: 18.75px;
+  font-family: $font-text;
+  text-align: center;
 }
 
-.sous-texte
-{
-	font-size: $font-size-l;
-	font-family: $font-text;
-	text-align: center;
+.sous-texte {
+  font-size: $font-size-l;
+  font-family: $font-text;
+  text-align: center;
 }
 
-.explorer
-{
-	background: linear-gradient($secondcolor, $maincolor );
-	width: 218px;
-	height: 51px;
-	color: $color_white2;
-	border-width: 0px;
-	border-radius: 25px;
-	font-size: $font-size-m;
-	font-family: $font-text;
-	margin-top: 25px;
-	margin-bottom: 60px;
+.explorer {
+  background: linear-gradient($secondcolor, $maincolor);
+  width: 218px;
+  height: 51px;
+  color: $color_white2;
+  border-width: 0px;
+  border-radius: 25px;
+  font-size: $font-size-m;
+  font-family: $font-text;
+  margin-top: 25px;
+  margin-bottom: 60px;
+
+  a {
+    text-decoration: none;
+    color: $color_white2;
+    }
+
 }
 
-h2
-{
-	margin-top: 30px;
-	font-size: $font-size-xl;
-	font-family: $font-text;
+h2 {
+  margin-top: 30px;
+  font-size: $font-size-xl;
+  font-family: $font-text;
 }
 
-//fonctionnement**/
-/.fonctionnement
-{
-	padding: 30px 17px;
-	.filtres
-	{
-		display: flex;
-		flex-direction: column;
-		gap: 30px;
-		align-items: center;
-		justify-content: center;
-		&__liste
-		{
-			width: 95%;
-			height: 73px;
-			display: flex;
-			align-items: center;
-			font-size: $font-size-m;
-			font-family: $font-text;
-			justify-content: flex-start;
-			font-weight: bold;
-			box-shadow: 0px 4px 15px 0px #00000026;
-			border-radius: 20px;
-			border-width: 0;
-			padding-left: 35px;
-			position: relative;
-			.number
-			{
-				position: absolute;
-				left: -11px;
-				display: flex;
-				border-radius: 50%;
-				color: $color_white2;
-				background-color: $maincolor;
-				padding: 7px;
-				font-family: $font-text;
-				font-size: 14px;
-				font-weight: 500;
-				line-height: 8px;
-			}
-		}
+//fonctionnement**//
 
-		i
-		{
-			margin-right: 20px;
-			color: #7E7E7E;
-		}
+.fonctionnement {
+  padding: 30px 17px;
 
-	}
+  .filtres {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+
+    &__liste {
+      width: 95%;
+      height: 73px;
+      display: flex;
+      align-items: center;
+      font-size: $font-size-m;
+      font-family: $font-text;
+      justify-content: flex-start;
+      font-weight: bold;
+      box-shadow: 0px 4px 15px 0px #00000026;
+      border-radius: 20px;
+      border-width: 0;
+      padding-left: 35px;
+      position: relative;
+
+      .number {
+        position: absolute;
+        left: -11px;
+        display: flex;
+        border-radius: 50%;
+        color: $color_white2;
+        background-color: $maincolor;
+        padding: 7px;
+        font-family: $font-text;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 8px;
+      }
+    }
+
+    i {
+      margin-right: 20px;
+      color: #7E7E7E;
+    }
+
+  }
 }
 
-#purple
-{
-	color: $maincolor;
+#purple {
+  color: $maincolor;
 }
 
-//****restaurants***/
-/.restaurants
-{
-	padding: 30px 17px;
-	background: $color_white;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	.card
-	{
-		border-radius: 15px;
-		display: flex;
-		flex-direction: column;
-		width: 98%;
-		height: 251px;
-		margin: 10px auto;
+//****restaurants***//
+
+.cards { 
+ 
+  a {
+    height: 251px;
+    text-decoration: none;
+    color: black;
+  }
+}
+
+.restaurants {
+  padding: 30px 17px;
+  background: $color_white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .card {
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    height: 251px;
+    margin: 10px auto;
+    position: relative;
+
+    img
+    {
+        width: 100%;
+        height: 70%;
+        object-fit: cover;
+    }
+
+    .legende {
+		background: $color_white2;
+		padding: 15px;
 		position: relative;
-		//*** Image 2 beug tjrs(hauteur différentes des autres si on ne met pas les valeurs de height en px//**/
-		/**le soucis c'est que ça ne permet pas selon la taille de télephone de garder les mêmes proportions parfois la card est mal centrée///***img
-		{
-			width: 100%;
-			height: 70%;
-			object-fit: cover;
+		margin-bottom: 10px;
+
+		h4, p {
+			margin: 0;
+			font-family: $font-text;
 		}
 
-		.legende
-		{
-			background: $color_white2;
-			padding: 15px;
-			position: relative;
-			margin-bottom: 10px;
-			h4,p
-			{
-				margin: 0;
-				font-family: $font-text;
-			}
+		h4 {
+			font-size: $font-size-l;
+		}
 
-			h4
-			{
-				font-size: $font-size-l;
-			}
+		p {
+			font-size: 17px;
+		}
 
-			p
-			{
-				font-size: 17px;
-			}
+		input[type="checkbox"] {
+			display: none;
+		}
 
-			input[type="checkbox"]
-			{
-				display: none;
-			}
-
-			input:checked + label
-			{
-				i
-				{
-					&.fa-regular
-					{
-						display: none;
-					}
-
-					&.fa-solid
-					{
-						display: block;
-					}
-				}
-			}
-
-			i
-			{
-				position: absolute;
-				right: 15px;
-				top: 20%;
-				display: flex;
-				font-size: 25px;
-				&.fa-solid
-				{
-					color: $maincolor;
+		input:checked + label {
+			i {
+				&.fa-regular {
 					display: none;
 				}
-			}
 
-			/*i:hover
-			{
-				color: $maincolor;
+				&.fa-solid {
+					display: block;
+				}
 			}
-
-			*/
 		}
 
-		.new_tag
-		{
+		i {
 			position: absolute;
-			display: flex;
 			right: 15px;
-			padding: 8px;
-			border-radius: 3px;
-			top: 15px;
-			color: #008766;
-			border: 1px solid $thirdcolor;
-			background-color: $thirdcolor;
-			font-size: 14px;
-			align-items: center;
-			justify-content: center;
-			font-weight: bold;
+			top: 20%;
+			display: flex;
+			font-size: 25px;
+
+			&.fa-solid {
+				color: $maincolor;
+				display: none;
+			}
 		}
 
+		i:hover {
+			color: $maincolor;
+		}
 	}
+  }
+
+  .new_tag {
+    position: absolute;
+    display: flex;
+    right: 15px;
+    padding: 8px;
+    border-radius: 3px;
+    top: 15px;
+    color: #008766;
+    border: 1px solid $thirdcolor;
+    background-color: $thirdcolor;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
 }
 
-@media screen and (min-width: 1024px)
-{
-	header
-	{
-		.logo_header
-		{
-		width: 14%}
-	}
+@media screen and (min-width: 1024px) {
+  header {
+    .logo_header {
+      width: 14%
+    }
+  }
 
-	.explorer
-	{
-		margin-bottom: 20px;
-	}
+  .explorer {
+    margin-bottom: 20px;
+  }
 
-	.fonctionnement
-	{
-		padding: 20px 17px 50px;
-		.filtres
-		{
-			flex-direction: row;
-			display: flex;
-			gap: 25px;
-		}
+  .fonctionnement {
+    padding: 20px 17px 50px;
 
-		.filtres__liste
-		{
-			width: 335px;
-			display: flex;
-		}
-	}
+    .filtres {
+      flex-direction: row;
+      display: flex;
+      gap: 25px;
+    }
 
-	.cards
-	{
-		display: flex;
-		flex-wrap: wrap;
-		flex-direction: row;
-		row-gap: 25px;
-		column-gap: 10px;
-		.card
-		{
-			width: 33%;
-		}
-	}
+    .filtres__liste {
+      width: 335px;
+      display: flex;
+    }
+  }
 
-	.restaurants
-	{
-		h2
-		{
-			padding-left: 8%;
-		}
-	}
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    row-gap: 25px;
+    column-gap: 10px;
+
+    .card {
+      width: 40%;
+    }
+  }
+
+  .restaurants {
+    h2 {
+      padding-left: 8%;
+    }
+  }
 }
