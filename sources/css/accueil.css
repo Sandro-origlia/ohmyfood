@@ -112,6 +112,11 @@ h1 {
   margin-top: 25px;
   margin-bottom: 60px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+  transition: 700ms;
+}
+.explorer:hover {
+  opacity: 0.8;
+  box-shadow: 0px 4px 10px 5px rgba(0, 0, 0, 0.2509803922);
 }
 .explorer a {
   text-decoration: none;

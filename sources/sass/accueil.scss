@@ -1,4 +1,6 @@
 @import "global";
+
+
 //****Header***//
 .recherche {
   display: flex;
@@ -60,7 +62,11 @@ h1 {
   margin-top: 25px;
   margin-bottom: 60px;
   box-shadow: 0px 4px 10px 0px #00000040;
-  ;
+  transition: 700ms;
+  
+  &:hover {
+    opacity: 0.8;
+    box-shadow: 0px 4px 10px 5px #00000040 ;}
 
   a {
     text-decoration: none;
