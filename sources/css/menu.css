@@ -116,14 +116,14 @@ header {
 .card input:checked + label i.fa-solid {
   display: block;
 }
-.card i {
+.card label i {
   position: absolute;
   right: 40px;
   top: 3.5%;
   display: flex;
   font-size: 25px;
 }
-.card i.fa-solid {
+.card label i.fa-solid {
   color: #9356DC;
   display: none;
 }
@@ -167,6 +167,7 @@ header {
   padding: 15px;
   align-items: center;
   background: white;
+  position: relative;
 }
 .card li .description {
   font-size: 15px;
@@ -185,6 +186,7 @@ header {
   font-size: 18px;
   font-weight: bold;
   align-self: end;
+  position: relative;
 }
 
 .commander {
@@ -204,6 +206,43 @@ header {
   margin-top: 25px;
   margin-bottom: 60px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+  transition: 700ms;
+}
+.commander .bouton:hover {
+  opacity: 0.8;
+  box-shadow: 0px 4px 10px 5px rgba(0, 0, 0, 0.2509803922);
+}
+.commander .bouton a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.check {
+  width: 60px;
+  background: #99E2D0;
+  border-radius: 0 15px 15px 0;
+  height: 100%;
+  position: absolute;
+  right: -60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.8s all;
+  visibility: hidden;
+}
+.check i {
+  color: white;
+  background-color: 9900D0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+li:hover .check {
+  right: 0;
+  visibility: visible;
+}
+li:hover .prix {
+  right: 60px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -219,12 +258,6 @@ header {
     margin: auto;
     padding-top: 50px;
     font-size: 28px;
-  }
-  .card i {
-    display: flex;
-    position: absolute;
-    right: 27%;
-    top: 5.3%;
   }
   .card li {
     display: flex;
