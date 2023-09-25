@@ -60,6 +60,54 @@ footer ul {
     margin-left: 35px;
   }
 }
+.loader {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: display_loader 3s forwards;
+}
+.loader .lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.loader .lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #9356DC transparent #9356DC transparent;
+  animation: rotate 1.2s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes display_loader {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
 .recherche {
   display: flex;
   flex-direction: column;
