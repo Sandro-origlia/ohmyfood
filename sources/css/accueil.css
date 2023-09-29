@@ -169,6 +169,9 @@ h1 {
 .explorer a {
   text-decoration: none;
   color: #ffffff;
+  display: flex;
+  justify-content: center;
+  margin: 7%;
 }
 
 h2 {
@@ -268,9 +271,12 @@ h2 {
 .restaurants .card i.fa-solid {
   color: #9356DC;
   display: none;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 .restaurants .card i:hover {
-  color: #9356DC;
+  color: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
 }
 .restaurants .card img {
   width: 100%;
