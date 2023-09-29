@@ -6,6 +6,8 @@ header
 	margin-bottom: -3%;
 }
  
+
+
 .return
 {
 	a
@@ -56,45 +58,28 @@ header
 		padding-left: 30px;
 	}
 
-	input[type="checkbox"]
-	{
-		display: none;
-	}
-
-	input:checked + label
-	{
-		i
-		{
-			&.fa-regular
-			{
-				display: none;
-			}
-
-			&.fa-solid
-			{
-				display: block;
-			}
-		}
-
-	}
-
-	label i
-	{
+	
+	.heart {
+		 i {
 		position: absolute;
 		right: 40px;
 		top: 3.5%;
 		display: flex;
 		font-size: 25px;
-		
-		&.fa-solid
-		{
-			
-			color: $maincolor;
-			display: none;
-		}
-
 	}
-
+	.full {
+		opacity: 0;
+		transition-property:all ;
+		transition-duration: 1.5s;
+	  }
+	
+	  .full:hover {
+		opacity: 1;
+		color: transparent;
+		background-image:$gradiant;
+		-webkit-background-clip: text;
+	}
+}
 	h2
 	{
 		font-size: $font-size-m;
@@ -143,6 +128,7 @@ header
 		align-items: center;
 		background: white;
 		position: relative;
+		overflow: hidden;
 		.description
 		{
 			font-size: $font-size-s;
@@ -214,7 +200,6 @@ header
 	justify-content: center;
 	align-items: center;
 	transition: .8s all;
-	visibility: hidden;
 	i {
 		color: white;
 		background-color: 99E2D0;
@@ -222,11 +207,12 @@ header
 		font-weight: bold;
 	}
 	}
+
+	.prix {transition: 0.8s all; right: 0px;}
 	
 li:hover {
 	 .check {
 		right:0;
-		visibility: visible;
 		}
 		 .prix {
 			right: 60px;
@@ -276,5 +262,13 @@ li:hover {
 		width: 75%;
 		margin: auto;
 		display: flex;
+	}
+	
+	.card .heart i {
+		position: absolute;
+		right: 200px;
+		top: 5.1%;
+		display: flex;
+		font-size: 25px;
 	}
 }
