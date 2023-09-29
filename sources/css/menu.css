@@ -15,7 +15,7 @@ header .logo_header {
   display: flex;
   margin: auto;
 }
- 
+
 footer {
   background-color: #353535;
   padding: 22px;
@@ -107,25 +107,23 @@ header {
   font-family: "Shrikhand", cursive;
   padding-left: 30px;
 }
-.card input[type=checkbox] {
-  display: none;
-}
-.card input:checked + label i.fa-regular {
-  display: none;
-}
-.card input:checked + label i.fa-solid {
-  display: block;
-}
-.card label i {
+.card .heart i {
   position: absolute;
   right: 40px;
   top: 3.5%;
   display: flex;
   font-size: 25px;
 }
-.card label i.fa-solid {
-  color: #9356DC;
-  display: none;
+.card .heart .full {
+  opacity: 0;
+  transition-property: all;
+  transition-duration: 1.5s;
+}
+.card .heart .full:hover {
+  opacity: 1;
+  color: transparent;
+  background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  -webkit-background-clip: text;
 }
 .card h2 {
   font-size: 16px;
@@ -168,6 +166,7 @@ header {
   align-items: center;
   background: white;
   position: relative;
+  overflow: hidden;
 }
 .card li .description {
   font-size: 15px;
@@ -228,7 +227,6 @@ header {
   justify-content: center;
   align-items: center;
   transition: 0.8s all;
-  visibility: hidden;
 }
 .check i {
   color: white;
@@ -237,9 +235,13 @@ header {
   font-weight: bold;
 }
 
+.prix {
+  transition: 0.8s all;
+  right: 0px;
+}
+
 li:hover .check {
   right: 0;
-  visibility: visible;
 }
 li:hover .prix {
   right: 60px;
@@ -272,6 +274,13 @@ li:hover .prix {
     width: 75%;
     margin: auto;
     display: flex;
+  }
+  .card .heart i {
+    position: absolute;
+    right: 200px;
+    top: 5.1%;
+    display: flex;
+    font-size: 25px;
   }
 }
 
