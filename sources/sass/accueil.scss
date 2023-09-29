@@ -221,48 +221,7 @@ h2 {
     height: 251px;
     margin: 10px auto;
     position: relative;
-
-    input[type="checkbox"] {
-			display: none;
-		}
-
-		input:checked + label {
-			i {
-				&.fa-regular {
-					display: none;
-          
-				}
-
-				&.fa-solid {
-					display: block;
-         
-				}
-			}
-		}
-
-		i {
-			position: absolute;
-			right: 15px;
-			bottom: 15%;
-			display: flex;
-			font-size: 25px;
-      
-
-			&.fa-solid {
-				color: $maincolor;
-				display: none;
-        background: $gradiant ;
-        -webkit-background-clip: text;
-        color: transparent;
-        
-
-			}
-		}
-
-		i:hover {
-			color: $gradiant;
-     
-		}
+  }
 
     img
     {
@@ -296,6 +255,27 @@ h2 {
 	}
   }
 
+ .card { 
+  i {position: absolute;
+    bottom: 13%;
+    right : 6%;
+    font-size: 160%;
+  }
+
+  .full {
+    opacity: 0;
+    transition-property:all ;
+    transition-duration: 1.5s;
+  }
+
+  .full:hover {
+    opacity: 1;
+    color: transparent;
+    background-image:$gradiant;
+    -webkit-background-clip: text;}
+}
+
+  
   .new_tag {
     position: absolute;
     display: flex;
@@ -311,7 +291,7 @@ h2 {
     justify-content: center;
     font-weight: bold;
   }
-}
+
 
 @media screen and (min-width: 1024px) {
   header {
