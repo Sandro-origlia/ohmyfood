@@ -125,6 +125,9 @@ h1 {
   a {
     text-decoration: none;
     color: $color_white2;
+    display: flex;
+    justify-content: center;
+    margin: 7%;
     }
 
 }
@@ -227,10 +230,12 @@ h2 {
 			i {
 				&.fa-regular {
 					display: none;
+          
 				}
 
 				&.fa-solid {
 					display: block;
+         
 				}
 			}
 		}
@@ -241,15 +246,22 @@ h2 {
 			bottom: 15%;
 			display: flex;
 			font-size: 25px;
+      
 
 			&.fa-solid {
 				color: $maincolor;
 				display: none;
+        background: $gradiant ;
+        -webkit-background-clip: text;
+        color: transparent;
+        
+
 			}
 		}
 
 		i:hover {
-			color: $maincolor;
+			color: $gradiant;
+     
 		}
 
     img
