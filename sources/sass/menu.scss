@@ -6,8 +6,6 @@ header
 	margin-bottom: -3%;
 }
  
-
-
 .return
 {
 	a
@@ -133,9 +131,10 @@ header
 		{
 			font-size: $font-size-s;
 			font-weight: normal;
+			overflow: hidden;
 			p
 			{
-				margin: 0;
+					margin: 0;
 				&.intitule
 				{
 					font-size: $font-size-l;
@@ -272,3 +271,34 @@ li:hover {
 		font-size: 25px;
 	}
 }
+
+///Animation d'ouverture page menu////
+
+
+h2,
+ul {
+  animation: 1s menu_animation forwards;
+}
+
+h2 ~ h2,
+ul ~ ul {
+  animation-delay: 1s;
+}
+
+h2 ~ h2 ~ h2,
+ul ~  ul ~ ul {
+  animation-delay: 2s;
+}
+
+@keyframes menu_animation {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
