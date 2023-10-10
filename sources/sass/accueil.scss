@@ -1,59 +1,59 @@
 @import "global";
 
 .loader {
-	position: fixed;
-	height: 100%;
-	width: 100%;
-	background: rgba(255, 255, 255, 0.8);
-	z-index: 999;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	animation: display_loader 3s forwards;
-	
-	.lds-dual-ring {
-	display: inline-block;
-	width: 80px;
-	height: 80px;
-	
-	&:after {
-	content: " ";
-	display: block;
-	width: 64px;
-	height: 64px;
-	margin: 8px;
-	border-radius: 50%;
-	border: 6px solid #fff;
-	border-color: $maincolor transparent $maincolor transparent;
-	animation:rotate 1.2s linear infinite;
-	}
-	}
-	}
-	
-	
-	@keyframes rotate {
-	0% {
-	transform: rotate(0deg);
-	}
-	100% {
-	transform: rotate(360deg);
-	}
-	}
-	 
-	@keyframes display_loader {
-	0% {
-	opacity: 1;
-	}
-	
-	99% {
-	opacity: 1;
-	}
-	
-	100% {
-	opacity: 0;
-	display: none;
-	}
-	}
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: display_loader 3s forwards;
+
+  .lds-dual-ring {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+
+    &:after {
+      content: " ";
+      display: block;
+      width: 64px;
+      height: 64px;
+      margin: 8px;
+      border-radius: 50%;
+      border: 6px solid #fff;
+      border-color: $maincolor transparent $maincolor transparent;
+      animation: rotate 1.2s linear infinite;
+    }
+  }
+}
+
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes display_loader {
+  0% {
+    opacity: 1;
+  }
+
+  99% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
 
 //****Header***//
 .recherche {
@@ -87,7 +87,6 @@
 }
 
 
-
 //****Contenu de page***/
 ///******Section recherche***//
 
@@ -117,10 +116,11 @@ h1 {
   margin-bottom: 60px;
   box-shadow: 0px 4px 10px 0px #00000040;
   transition: 700ms;
-  
+
   &:hover {
     opacity: 0.8;
-    box-shadow: 0px 4px 10px 5px #00000040 ;}
+    box-shadow: 0px 4px 10px 5px #00000040;
+  }
 
   a {
     text-decoration: none;
@@ -128,7 +128,7 @@ h1 {
     display: flex;
     justify-content: center;
     margin: 7%;
-    }
+  }
 
 }
 
@@ -196,8 +196,8 @@ h2 {
 
 //****restaurants***//
 
-.cards { 
- 
+.cards {
+
   a {
     height: 251px;
     text-decoration: none;
@@ -223,74 +223,73 @@ h2 {
     position: relative;
   }
 
-    img
-    {
-        width: 100%;
-        height: 70%;
-        object-fit: cover;
-        border-radius: 15px 15px 0 0;
-    }
-
-    .legende {
-		background: $color_white2;
-		padding: 15px;
-		position: relative;
-		margin-bottom: 10px;
-    border-radius: 0 0 15px 15px;
-
-		h4, p {
-			margin: 0;
-			font-family: $font-text;
-		}
-
-		h4 {
-			font-size: $font-size-l;
-		}
-
-		p {
-			font-size: 17px;
-		}
-
-	
-	}
+  img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
   }
 
- .card { 
-  i { position: absolute;
+  .legende {
+    background: $color_white2;
+    padding: 15px;
+    position: relative;
+    margin-bottom: 10px;
+    border-radius: 0 0 15px 15px;
+
+    h4, p {
+      margin: 0;
+      font-family: $font-text;
+    }
+
+    h4 {
+      font-size: $font-size-l;
+    }
+
+    p {
+      font-size: 17px;
+    }
+  }
+}
+
+.card {
+  i {
+    position: absolute;
     bottom: 13%;
-    right : 6%;
+    right: 6%;
     font-size: 160%;
   }
 
   .full {
     opacity: 0;
-    transition-property:all ;
+    transition-property: all;
     transition-duration: 1.5s;
   }
 
   .full:hover {
     opacity: 1;
     color: transparent;
-    background-image:$gradiant;
-    -webkit-background-clip: text;}
+    background-image: $gradiant;
+    -webkit-background-clip: text;
+  }
 }
 
-  
-  .new_tag {
-    position: absolute;
-    display: flex;
-    right: 15px;
-    padding: 8px;
-    border-radius: 3px;
-    top: 15px;
-    color: #008766;
-    border: 1px solid $thirdcolor;
-    background-color: $thirdcolor;
-    font-size: 14px;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-  }
+
+.new_tag {
+  position: absolute;
+  display: flex;
+  right: 15px;
+  padding: 8px;
+  border-radius: 3px;
+  top: 15px;
+  color: #008766;
+  border: 1px solid $thirdcolor;
+  background-color: $thirdcolor;
+  font-size: 14px;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
 
 
 @media screen and (min-width: 1024px) {
@@ -335,13 +334,12 @@ h2 {
     }
   }
 
-  
-    h2 {
-      margin-left: 5%;
-    }
-    
+  h2 {
+    margin-left: 5%;
+  }
+
   #mon_ancre {
     margin-left: 14%;
   }
-  }
+}
 

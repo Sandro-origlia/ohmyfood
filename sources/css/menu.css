@@ -135,6 +135,7 @@ header {
   position: relative;
   bottom: 75%;
   padding-left: 20px;
+  opacity: 0;
 }
 .card h2:after {
   content: "";
@@ -151,6 +152,7 @@ header {
   display: flex;
   flex-direction: column;
   padding: 0 10px;
+  opacity: 0;
 }
 .card li {
   box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1019607843);
@@ -175,6 +177,9 @@ header {
 }
 .card li .description p {
   margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .card li .description p.intitule {
   font-size: 18px;
@@ -187,6 +192,34 @@ header {
   font-weight: bold;
   align-self: end;
   position: relative;
+  transition: 0.8s all;
+  right: 0px;
+}
+.card li .check {
+  width: 60px;
+  background: #99E2D0;
+  border-radius: 0 15px 15px 0;
+  height: 100%;
+  position: absolute;
+  right: -60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.8s all;
+}
+.card li .check i {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+.card li:hover .description {
+  width: calc(100% - 100px);
+}
+.card li:hover .check {
+  right: 0;
+}
+.card li:hover .prix {
+  right: 60px;
 }
 
 .commander {
@@ -217,37 +250,6 @@ header {
   color: #ffffff;
 }
 
-.check {
-  width: 60px;
-  background: #99E2D0;
-  border-radius: 0 15px 15px 0;
-  height: 100%;
-  position: absolute;
-  right: -60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.8s all;
-}
-.check i {
-  color: white;
-  background-color: 9900D0;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.prix {
-  transition: 0.8s all;
-  right: 0px;
-}
-
-li:hover .check {
-  right: 0;
-}
-li:hover .prix {
-  right: 60px;
-}
-
 @media screen and (min-width: 1024px) {
   header .logo_header {
     width: 14%;
@@ -267,14 +269,11 @@ li:hover .prix {
     width: 70%;
     margin: auto;
   }
+  .card li:hover .description {
+    width: 100%;
+  }
   .card h2 {
     padding-left: 14.5%;
-  }
-  .commander {
-    background-color: #F6F6F6;
-    width: 75%;
-    margin: auto;
-    display: flex;
   }
   .card .heart i {
     position: absolute;
@@ -282,6 +281,12 @@ li:hover .prix {
     top: 5.1%;
     display: flex;
     font-size: 25px;
+  }
+  .commander {
+    background-color: #F6F6F6;
+    width: 75%;
+    margin: auto;
+    display: flex;
   }
 }
 h2,
